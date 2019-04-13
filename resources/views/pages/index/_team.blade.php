@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Employer</h3>
+                        <h3>Employé</h3>
                         <span>Poste</span>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Employer</h3>
+                        <h3>Employé</h3>
                         <span>Poste</span>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Employer</h3>
+                        <h3>Employé</h3>
                         <span>Poste</span>
                     </div>
                 </div>
