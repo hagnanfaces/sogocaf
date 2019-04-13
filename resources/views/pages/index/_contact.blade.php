@@ -18,7 +18,9 @@
                 <div class="contact">
                     <i class="fa fa-phone"></i>
                     <h3>Phone</h3>
-                    <p>(+226) 99 99 99 99</p>
+                    <p>(+226) 25 34 55 94</p>
+                    <p>(+226) 25 41 64 62</p>
+                    <p>(+226) 70 14 30 40</p>
                 </div>
             </div>
             <!-- /contact -->
@@ -38,7 +40,7 @@
                 <div class="contact">
                     <i class="fa fa-map-marker"></i>
                     <h3>Adresse</h3>
-                    <p>Rue de </p>
+                    <p>Av. KADIOGO - Rue 8.31 - Quartier Gounghin - Secteur 06</p>
                 </div>
             </div>
             <!-- /contact -->

@@ -69,10 +69,10 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Accueil</a></li>
 					<li><a href="#about">A propos</a></li>
-					<li><a href="#portfolio">Réalisation</a></li>
+					<li><a href="#portfolio">Réalisations</a></li>
 					<li><a href="#service">Services</a></li>
 					{{--  <li><a href="#pricing">Prices</a></li>  --}}
-					<li><a href="#team">Personnel</a></li>
+					<li><a href="#team">Personnels</a></li>
 					{{--  <li class="has-dropdown"><a href="#blog">Blog</a>
 						<ul class="dropdown">
 							<li><a href="/blog">blog post</a></li>
@@ -94,9 +94,9 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
-							<h1 class="white-text">SOCOGAF</h1>
+							<h1 class="white-text">SOCOGHAF</h1>
 							<p class="white-text">
-                                Materiaux de construction
+                                Matériaux de construction
 							</p>
 							{{--  <button class="white-btn">Get Started!</button>  --}}
 							{{--  <button class="main-btn">Learn more</button>  --}}
@@ -144,7 +144,7 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2019. Tout droit reserver. Realiser par <a href="#" target="_blank">A.K.A</a></p>
+						<p>Copyright © 2019. Tout droit reserver. Realiser par <a href="#" target="_blank">RDASERVICE</a></p>
 					</div>
 					<!-- /footer copyright -->
 
