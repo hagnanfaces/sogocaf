@@ -51,7 +51,7 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a href="index.html">
+						<a href="/">
 							<img class="logo" src="{{ asset('assets/img/logo.png') }}" alt="logo">
 							<img class="logo-alt" src="{{ asset('assets/img/logo-alt.png') }}" alt="logo">
 						</a>
@@ -127,7 +127,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.html"><img src="{{ asset('assets/img/logo-alt.png') }}" alt="logo"></a>
+						<a href="/"><img src="{{ asset('assets/img/logo-alt.png') }}" alt="logo"></a>
 					</div>
 					<!-- /footer logo -->
 
