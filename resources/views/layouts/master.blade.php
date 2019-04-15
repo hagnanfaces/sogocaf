@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>SOCOGAF | @yield('title')</title>
+	<title>SOCOGHAF | @yield('title')</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -36,18 +36,16 @@
 </head>
 
 <body>
+
 	<!-- Header -->
 	<header id="home">
-		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('{{ asset("assets/img/background1.jpg")}}');">
-			<div class="overlay"></div>
-		</div>
-		<!-- /Background Image -->
-
+		@section('bgi')
+			@include('pages.index._header')
+		@show
 		<!-- Nav -->
 		<nav id="nav" class="navbar nav-transparent">
 			<div class="container">
-
+	
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
@@ -57,61 +55,69 @@
 						</a>
 					</div>
 					<!-- /Logo -->
-
+	
 					<!-- Collapse nav button -->
 					<div class="nav-collapse">
 						<span></span>
 					</div>
 					<!-- /Collapse nav button -->
 				</div>
-
+	
 				<!--  Main navigation  -->
-				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Accueil</a></li>
-					<li><a href="#about">A propos</a></li>
-					<li><a href="#portfolio">Réalisations</a></li>
-					<li><a href="#service">Services</a></li>
-					{{--  <li><a href="#pricing">Prices</a></li>  --}}
-					<li><a href="#team">Personnels</a></li>
-					{{--  <li class="has-dropdown"><a href="#blog">Blog</a>
-						<ul class="dropdown">
-							<li><a href="/blog">blog post</a></li>
-						</ul>
-					</li>  --}}
-					<li><a href="#contact">Contact</a></li>
-				</ul>
+				@section('navigation')				
+					<ul class="main-nav nav navbar-nav navbar-right">
+						<li><a href="#home">Accueil</a></li>
+						<li><a href="#about">A propos</a></li>
+						<li><a href="#portfolio">Réalisations</a></li>
+						<li><a href="#service">services</a></li>
+						{{--  <li class="has-dropdown">
+							<a href="#service">Services</a>
+							<ul class="dropdown">
+								<li><a href="/frfr/services/hardox">Hardox Wear Plates</a></li>
+							</ul>
+						</li>  --}}
+						<li><a href="#team">Personnels</a></li>
+						<li><a href="#contact">Contact</a></li>
+						{{--  <li class="has-dropdown">
+							<a href="/fr/categories">Produits</a>
+							<ul class="dropdown">
+								<li><a href="/hardox">Hardox</a></li>
+							</ul>
+						</li>  --}}
+						<li><a class="btn btn-warning pull-right" href="/fr/devis#consult">Demandez un devis</a></li>		
+					</ul>
+				@show
 				<!-- /Main navigation -->
-
+	
 			</div>
 		</nav>
 		<!-- /Nav -->
-
+	
 		<!-- home wrapper -->
 		<div class="home-wrapper">
 			<div class="container">
 				<div class="row">
-
+	
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1 class="white-text">SOCOGHAF</h1>
 							<p class="white-text">
-                                Matériaux de construction
+								Matériaux de construction
 							</p>
 							{{--  <button class="white-btn">Get Started!</button>  --}}
 							{{--  <button class="main-btn">Learn more</button>  --}}
 						</div>
 					</div>
 					<!-- /home content -->
-
+	
 				</div>
 			</div>
 		</div>
 		<!-- /home wrapper -->
-
+	
 	</header>
-    <!-- /Header -->
-    
+	<!-- /Header -->
     @yield('content')
 
 	<!-- Footer -->

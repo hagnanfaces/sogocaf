@@ -48,10 +48,10 @@
             <!-- contact form -->
             <div class="col-md-8 col-md-offset-2">
                 <form class="contact-form">
-                    <input type="text" class="input" placeholder="Nom">
-                    <input type="email" class="input" placeholder="Email">
-                    <input type="text" class="input" placeholder="Objet">
-                    <textarea class="input" placeholder="Message"></textarea>
+                    <input type="text" name="nom" class="input" placeholder="Nom">
+                    <input type="email" name="email" class="input" placeholder="Email">
+                    <input type="text" name="objet" class="input" placeholder="Objet">
+                    <textarea class="input" name="message" placeholder="Message"></textarea>
                     <button class="main-btn">Envoyer message</button>
                 </form>
             </div>

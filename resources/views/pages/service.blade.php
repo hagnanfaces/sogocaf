@@ -1,11 +1,11 @@
 @extends('layouts.master')
 
 @section('title')
-    Blog
+    Demander un devis
 @endsection
 
 @section('content')
 
-    @include('pages.blog.index')
+    @include('pages.index._why')
     
 @endsection

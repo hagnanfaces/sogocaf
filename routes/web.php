@@ -10,6 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::redirect('/','/fr');
 
-Route::view('/', 'pages.index');
-Route::view('/blog', 'pages.blog');
+Route::prefix('{lang}')
+    ->group(function () {
+        Route::view('/', 'pages.index');
+        Route::view('/blog', 'pages.blog');
+        Route::view('/services', 'pages.service');
+        Route::view('/services/{service}', 'pages.service.show');
+        Route::view('/categories', 'pages.category');
+        Route::view('/categories/{category}', 'pages.category');
+        Route::view('/categories/{category}/product/{product}', 'pages.category.show');
+        Route::view('/produits', 'pages.product');
+        Route::view('/devis', 'pages.consult');
+    });

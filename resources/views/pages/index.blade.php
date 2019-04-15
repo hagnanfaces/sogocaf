@@ -4,6 +4,10 @@
     Accueil
 @endsection
 
+{{--  @section('bgi')
+    @include('pages.index._header')
+@endsection  --}}
+
 @section('content')
 
     @include('pages.index._about')
