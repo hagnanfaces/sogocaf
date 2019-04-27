@@ -1,21 +1,22 @@
-@extends('layouts.master')
+@extends('layouts.second')
 
 @section('title')
-    Product
+    {{ trans('page.home.product.title') }}
 @endsection
 
-@section('navigation')
-    <ul class="main-nav nav navbar-nav navbar-right">
-        <li><a href="/">Accueil</a></li>
-        {{--  <li class="has-dropdown">
-            <a href="/fr/categories">Produits</a>
-            <ul class="dropdown">
-                <li><a href="/hardox">Hardox</a></li>
-            </ul>
-        </li>  --}}
-        <li><a class="btn btn-warning pull-right" href="/fr/devis#consult">Demandez un devis</a></li>
-    </ul>
-@endsection
+{{--@section('navigation')--}}
+    {{--<ul class="main-nav nav navbar-nav navbar-left">--}}
+        {{--<li><a href="{{ route('home') }}#home">Accueil</a></li>--}}
+        {{--<li><a href="{{ route('home') }}#about">A propos</a></li>--}}
+        {{--<li><a href="{{ route('home') }}#portfolio">Produits</a></li>--}}
+        {{--<li><a href="{{ route('home') }}#service">Services</a></li>--}}
+        {{--<li><a href="{{ route('home') }}#team">Personnels</a></li>--}}
+        {{--<li><a href="{{ route('home') }}#contact">Contact</a></li>--}}
+    {{--</ul>--}}
+{{--@endsection--}}
+
+{{--@section('bgi')@endsection--}}
+{{--@section('home-wrapper')@endsection--}}
 
 @section('content')
 
@@ -24,15 +25,19 @@
 
     <!-- Container -->
     <div class="container">
-
+        <!-- Section header -->
+        <div class="section-header text-center">
+            <h2 class="title">{{ trans('page.home.product.title') }}</h2>
+        </div>
+        <!-- /Section header -->
         <!-- Row -->
         <div class="row">
 
             <!-- Main -->
-            <main id="main" class="col-md-9">
+            <main id="main" class="col-md-12">
                 <div class="blog">
                     <div class="blog-img">
-                        <img class="img-responsive" src="{{ asset('assets/img/blog-post') }}.jpg" alt="">
+                        <img class="img-responsive" src="{!! $category['image'] !!}" alt="">
                     </div>
                     <div class="blog-content">
                         {{--  <ul class="blog-meta">
@@ -40,8 +45,8 @@
                             <li><i class="fa fa-clock-o"></i>18 Oct</li>
                             <li><i class="fa fa-comments"></i>57</li>
                         </ul>  --}}
-                        <h3>Produit</h3>
-                        <p>Détails.</p>
+                        <h3>{{ $category['name'] }}</h3>
+                        <p>{{ $category['description'] }}</p>
                     </div>
 
                     {{--  <!-- blog tags -->
@@ -164,27 +169,30 @@
 
 
             <!-- Aside -->
-            <aside id="aside" class="col-md-3">
+            {{--<aside id="aside" class="col-md-3">
 
-                {{--  <!-- Search -->
+                --}}{{--  <!-- Search -->
                 <div class="widget">
                     <div class="widget-search">
                         <input class="search-input" type="text" placeholder="search">
                         <button class="search-btn" type="button"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
-                <!-- /Search -->  --}}
+                <!-- /Search -->  --}}{{--
 
                 <!-- Category -->
-                <div class="widget">
+                --}}{{--<div class="widget">
                     <h3 class="title">Categories</h3>
-                    <div class="widget-category">
-                        <a href="#">Tôles inox</span></a>
-                    </div>
-                </div>
+                    --}}{{----}}{{--<div class="widget-category">--}}{{----}}{{--
+                        --}}{{----}}{{--<a href="#"><span>Tôles inox</span></a>--}}{{----}}{{--
+                    @foreach(trans('page.home.product.products') as $product)
+                        <div class="widget-category"><a href="#"><span>{{ $product['name'] }}</span></a></div>
+                    @endforeach
+                    --}}{{----}}{{--</div>--}}{{----}}{{--
+                </div>--}}{{--
                 <!-- /Category -->
 
-                {{--  <!-- Posts sidebar -->
+                --}}{{--  <!-- Posts sidebar -->
                 <div class="widget">
                     <h3 class="title">Populare Posts</h3>
 
@@ -238,9 +246,9 @@
                         <a href="#">Photography</a>
                     </div>
                 </div>
-                <!-- /Tags -->  --}}
+                <!-- /Tags -->  --}}{{--
 
-            </aside>
+            </aside>--}}
             <!-- /Aside -->
 
         </div>

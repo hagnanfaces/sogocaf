@@ -15,6 +15,14 @@
 	});
 
 	///////////////////////////
+	// Lang
+	$("#lang").on('change', function(e) {
+		// console.info('el: ',$(this).val());
+		// console.info('location: ',window.location.origin);
+		window.location.replace(`${window.location.origin}/${$(this).val()}`)
+	});
+
+	///////////////////////////
 	// Smooth scroll
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
 		e.preventDefault();
@@ -63,6 +71,17 @@
 
 	///////////////////////////
 	// Owl Carousel
+	/*$('#bgi-slider').owlCarousel({
+		// items:1,1
+		loop:true,
+		margin:15,
+		nav: true,
+		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		dots : true,
+		autoplay : true,
+		animateOut: 'fadeOut'
+	});*/
+
 	$('#about-slider').owlCarousel({
 		items:1,
 		loop:true,

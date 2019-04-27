@@ -9,11 +9,11 @@
 
             <!-- Section-header -->
             <div class="section-header text-center">
-                <h2 class="title">Contactez nous</h2>
+                <h2 class="title">{{ trans('page.home.contact.title') }}</h2>
             </div>
             <!-- /Section-header -->
 
-            <!-- contact -->
+           {{-- <!-- contact -->
             <div class="col-sm-4">
                 <div class="contact">
                     <i class="fa fa-phone"></i>
@@ -30,7 +30,7 @@
                 <div class="contact">
                     <i class="fa fa-envelope"></i>
                     <h3>Email</h3>
-                    <p>info@socogaf.com</p>
+                    <p>info@socoghaf.com</p>
                 </div>
             </div>
             <!-- /contact -->
@@ -43,16 +43,16 @@
                     <p>Av. KADIOGO - Rue 8.31 - Quartier Gounghin - Secteur 06</p>
                 </div>
             </div>
-            <!-- /contact -->
+            <!-- /contact -->--}}
 
             <!-- contact form -->
             <div class="col-md-8 col-md-offset-2">
                 <form class="contact-form">
-                    <input type="text" name="nom" class="input" placeholder="Nom">
-                    <input type="email" name="email" class="input" placeholder="Email">
-                    <input type="text" name="objet" class="input" placeholder="Objet">
-                    <textarea class="input" name="message" placeholder="Message"></textarea>
-                    <button class="main-btn">Envoyer message</button>
+                    <input type="text" name="nom" class="input" placeholder="{{ trans('page.home.contact.contact-form.name') }}">
+                    <input type="email" name="email" class="input" placeholder="{{ trans('page.home.contact.contact-form.email') }}">
+                    <input type="text" name="objet" class="input" placeholder="{{ trans('page.home.contact.contact-form.subject') }}">
+                    <textarea class="input" name="message" placeholder="{{ trans('page.home.contact.contact-form.msg') }}"></textarea>
+                    <button type="submit" class="main-btn">{{ trans('page.home.contact.contact-form.send') }}</button>
                 </form>
             </div>
             <!-- /contact form -->

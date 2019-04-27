@@ -10,24 +10,14 @@
             <!-- why choose us content -->
             <div class="col-md-6">
                 <div class="section-header">
-                    <h2 class="title">Why Choose Us</h2>
+                    <h2 class="title">{{ trans('page.home.feature.title') }}</h2>
                 </div>
-                <p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque purus.</p>
+                <p>
+                    {!! trans('page.home.feature.description') !!}
+                </p>
                 <div class="feature">
                     <i class="fa fa-check"></i>
-                    <p>Quis varius quam quisque id diam vel quam elementum.</p>
-                </div>
-                <div class="feature">
-                    <i class="fa fa-check"></i>
-                    <p>Mauris augue neque gravida in fermentum.</p>
-                </div>
-                <div class="feature">
-                    <i class="fa fa-check"></i>
-                    <p>Orci phasellus egestas tellus rutrum.</p>
-                </div>
-                <div class="feature">
-                    <i class="fa fa-check"></i>
-                    <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</p>
+                    <p>{!! trans('page.home.feature.features') !!}</p>
                 </div>
             </div>
             <!-- /why choose us content -->

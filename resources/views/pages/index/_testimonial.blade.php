@@ -20,7 +20,7 @@
                     <!-- testimonial -->
                     <div class="testimonial">
                         <div class="testimonial-meta">
-                            <img src="{{ asste('assets/img/perso1.jpg') }}" alt="">
+                            <img src="{{ asset('assets/img/perso1.jpg') }}" alt="">
                             <h3 class="white-text">Ornella Traore</h3>
                             <span>Chef Channtier</span>
                         </div>
@@ -31,7 +31,7 @@
                     <!-- testimonial -->
                     <div class="testimonial">
                         <div class="testimonial-meta">
-                            <img src="{{ asste('assets/img/perso2.jpg') }}" alt="">
+                            <img src="{{ asset('assets/img/perso2.jpg') }}" alt="">
                             <h3 class="white-text">Ali Bon</h3>
                             <span>Revendeur</span>
                         </div>

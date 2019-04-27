@@ -36,22 +36,24 @@
 </head>
 
 <body>
-
 	<!-- Header -->
 	<header id="home">
-		@section('bgi')
-			@include('pages.index._header')
-		@show
+		<div id="bgi-slider">
+			@section('bgi')
+				@include('pages.index._header')
+			@show
+		</div>
 		<!-- Nav -->
-		<nav id="nav" class="navbar nav-transparent">
+		{{--<nav id="nav" class="navbar nav-transparent fixed-nav">--}}
+		<nav id="nav" class="navbar">
 			<div class="container">
 	
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="/">
-							<img class="logo" src="{{ asset('assets/img/logo.png') }}" alt="logo">
-							<img class="logo-alt" src="{{ asset('assets/img/logo-alt.png') }}" alt="logo">
+							<img class="logo shadow" src="{{ asset('assets/img/logo.png') }}" alt="SOCOGHAF">
+							<img class="logo-alt" src="{{ asset('assets/img/logo-alt.png') }}" alt="SOCOGHAF">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -65,28 +67,33 @@
 	
 				<!--  Main navigation  -->
 				@section('navigation')				
-					<ul class="main-nav nav navbar-nav navbar-right">
-						<li><a href="#home">Accueil</a></li>
-						<li><a href="#about">A propos</a></li>
-						<li><a href="#portfolio">Réalisations</a></li>
-						<li><a href="#service">services</a></li>
-						{{--  <li class="has-dropdown">
-							<a href="#service">Services</a>
-							<ul class="dropdown">
-								<li><a href="/frfr/services/hardox">Hardox Wear Plates</a></li>
-							</ul>
-						</li>  --}}
-						<li><a href="#team">Personnels</a></li>
-						<li><a href="#contact">Contact</a></li>
-						{{--  <li class="has-dropdown">
-							<a href="/fr/categories">Produits</a>
-							<ul class="dropdown">
-								<li><a href="/hardox">Hardox</a></li>
-							</ul>
-						</li>  --}}
-						<li><a class="btn btn-warning pull-right" href="/fr/devis#consult">Demandez un devis</a></li>		
+					<ul class="main-nav nav navbar-nav navbar-left">
+						<li><a href="#home">{{ trans('page.menu.home') }}</a></li>
+						<li><a href="#about">{{ trans('page.menu.about') }}</a></li>
+						<li><a href="#product">{{ trans('page.menu.product') }}</a></li>
+						<li><a href="#service">{{ trans('page.menu.service') }}</a></li>
+						<li><a href="#team">{{ trans('page.menu.team') }}</a></li>
+						<li><a href="#contact">{{ trans('page.menu.contact') }}</a></li>
 					</ul>
 				@show
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="btn btn-warning" href="{{ route('contact') }}#consult">{{ trans('page.menu.consult') }}</a></li>
+					{{--<li class="has-dropdown">--}}
+						{{--<a class="btn pull-right" href="javascript:;"><i class="fa fa-pencil"></i></a>--}}
+						{{--<ul class="dropdown">--}}
+							{{--<li><a href="/fr">FR</a></li>--}}
+							{{--<li><a href="/en">EN</a></li>--}}
+						{{--</ul>--}}
+					{{--</li>--}}
+					<li class="lang">
+						<a href="javascript:;">
+							<select name="" id="lang" class="">
+								<option value="fr" @if(\LaravelLocalization::getCurrentLocale() === 'fr') selected @endif >FR</option>
+								<option value="en" @if(\LaravelLocalization::getCurrentLocale() === 'en') selected @endif >EN</option>
+							</select>
+						</a>
+					</li>
+				</ul>
 				<!-- /Main navigation -->
 	
 			</div>
@@ -94,26 +101,28 @@
 		<!-- /Nav -->
 	
 		<!-- home wrapper -->
-		<div class="home-wrapper">
-			<div class="container">
-				<div class="row">
-	
-					<!-- home content -->
-					<div class="col-md-10 col-md-offset-1">
-						<div class="home-content">
-							<h1 class="white-text">SOCOGHAF</h1>
-							<p class="white-text">
-								Matériaux de construction
-							</p>
-							{{--  <button class="white-btn">Get Started!</button>  --}}
-							{{--  <button class="main-btn">Learn more</button>  --}}
+		@section('home-wrapper')
+			<div class="home-wrapper">
+				<div class="container">
+					<div class="row">
+
+						<!-- home content -->
+						<div class="col-md-10 col-md-offset-1">
+							<div class="home-content">
+								<h1 class="white-text">{{ trans('page.home-wrapper.title') }}</h1>
+								<p class="white-text">
+									{{ trans('page.home-wrapper.description') }}
+								</p>
+								{{--  <button class="white-btn">Get Started!</button>  --}}
+								{{--  <button class="main-btn">Learn more</button>  --}}
+							</div>
 						</div>
+						<!-- /home content -->
+
 					</div>
-					<!-- /home content -->
-	
 				</div>
 			</div>
-		</div>
+		@show
 		<!-- /home wrapper -->
 	
 	</header>
@@ -133,9 +142,43 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="/"><img src="{{ asset('assets/img/logo-alt.png') }}" alt="logo"></a>
+						<a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo-alt.png') }}" alt="SOCOGHAF"></a>
 					</div>
 					<!-- /footer logo -->
+					
+					<div class="row">
+						<!-- contact -->
+						<div class="col-sm-4">
+							<div class="contact">
+								<i class="fa fa-phone"></i>
+								<p class="text-uppercase text-gray">{{ trans('page.footer.contact.phone') }}</p>
+								<p>(+226) 25 34 55 94</p>
+								<p>(+226) 25 41 64 62</p>
+								<p>(+226) 70 14 30 40</p>
+							</div>
+						</div>
+						<!-- /contact -->
+
+						<!-- contact -->
+						<div class="col-sm-4">
+							<div class="contact">
+								<i class="fa fa-envelope"></i>
+								<p>{{ trans('page.footer.contact.email') }}</p>
+								<p>info@socoghaf.com</p>
+							</div>
+						</div>
+						<!-- /contact -->
+
+						<!-- contact -->
+						<div class="col-sm-4">
+							<div class="contact">
+								<i class="fa fa-map-marker"></i>
+								<p>{{ trans('page.footer.contact.address') }}</p>
+								<p>Av. KADIOGO - Rue 8.31 - Quartier Gounghin - Secteur 06</p>
+							</div>
+						</div>
+						<!-- /contact -->
+					</div>
 
 					{{--  <!-- footer follow -->
 					<ul class="footer-follow">
@@ -150,7 +193,7 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2019. Tout droit reserver. Realiser par <a href="#" target="_blank">RDASERVICE</a></p>
+						{!! trans('page.footer.copyright') !!}
 					</div>
 					<!-- /footer copyright -->
 
@@ -183,8 +226,8 @@
 	<!-- jQuery Plugins -->
 	<script type="text/javascript" src="{{ asset('assets/js/jquery.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/jquery.magnific-popup.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
