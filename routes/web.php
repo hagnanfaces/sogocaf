@@ -11,21 +11,14 @@
 |
 */
 
-
-
-/* Route::middleware('web')
-    ->prefix(config('backpack.base.route_prefix', ['namespace' => 'Backpack\Base\app\Http\Controllers']))
-    ->group(function () {
-        Route::auth();
-        Route::get('logout', 'Auth\LoginController@logout');
-        Route::get('dashboard', 'AdminController@dashboard');
-        Route::get('/', 'AdminController@redirect');
-    }); */
-
 //Route::redirect('/','/fr');
 
 Route::prefix(\LaravelLocalization::setLocale())
-    ->middleware([ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ])
+    ->middleware([
+        'localeSessionRedirect',
+        'localizationRedirect',
+        'localeViewPath'
+    ])
     ->group(function () {
         Route::name('home')->get('/', 'ContactController@index');
 //        Route::view('/blog', 'pages.blog');

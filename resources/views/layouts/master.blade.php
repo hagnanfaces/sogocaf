@@ -78,15 +78,22 @@
 				@show
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="btn btn-warning" href="{{ route('contact') }}#consult">{{ trans('page.menu.consult') }}</a></li>
-					{{--<li class="has-dropdown">--}}
-						{{--<a class="btn pull-right" href="javascript:;"><i class="fa fa-pencil"></i></a>--}}
-						{{--<ul class="dropdown">--}}
-							{{--<li><a href="/fr">FR</a></li>--}}
-							{{--<li><a href="/en">EN</a></li>--}}
-						{{--</ul>--}}
-					{{--</li>--}}
+					{{--<li class="has-dropdown">
+						<a class="btn pull-right" href="javascript:;"><i class="fa fa-pencil"></i></a>
+						<ul class="dropdown">
+							<li><a href="/fr">FR</a></li>
+							<li><a href="/en">EN</a></li>
+						</ul>
+					</li>--}}
+					{{--@foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+						<li>
+							<a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+								{{ $properties['native'] }}
+							</a>
+						</li>
+					@endforeach--}}
 					<li class="lang">
-						<a href="javascript:;">
+						<a href="javascript:">
 							<select name="" id="lang" class="">
 								<option value="fr" @if(\LaravelLocalization::getCurrentLocale() === 'fr') selected @endif >FR</option>
 								<option value="en" @if(\LaravelLocalization::getCurrentLocale() === 'en') selected @endif >EN</option>

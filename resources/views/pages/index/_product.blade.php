@@ -22,7 +22,7 @@
                         <span>{!! $product['name'] !!}</span>
                         <h3>{!! $product['description'] !!}</h3>
                         <div class="work-link">
-                            <a href="{!! $product['href'] !!}#category-show"><i class="fa fa-external-link"></i></a>
+                            {{--<a href="{!! $product['href'] !!}#category-show"><i class="fa fa-external-link"></i></a>--}}
                             <a class="lightbox" href="{!! $product['image'] !!}"><i class="fa fa-search"></i></a>
                         </div>
                     </div>

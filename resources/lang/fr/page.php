@@ -159,7 +159,7 @@ return [
             'contact-form' => [
                 'name' => 'Nom',
                 'email' => 'Email',
-                'objet' => 'Objet',
+                'subject' => 'Objet',
                 'msg' => 'Message',
                 'send' => 'Envoyer message',
             ],
