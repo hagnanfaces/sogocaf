@@ -25,10 +25,10 @@
             <!-- About slider -->
             <div class="col-md-6">
                 <div id="about-slider" class="owl-carousel owl-theme">
-                    <img class="img-responsive" src="{{ asset('assets/img/about1.jpg') }}" alt="">
-                    <img class="img-responsive" src="{{ asset('assets/img/about2.jpg') }}" alt="">
-                    <img class="img-responsive" src="{{ asset('assets/img/about1.jpg') }}" alt="">
-                    <img class="img-responsive" src="{{ asset('assets/img/about2.jpg') }}" alt="">
+                    <img class="img-responsive" src="{{ asset('assets/img/hardox_1.jpg') }}" alt="">
+                    <img class="img-responsive" src="{{ asset('assets/img/hardox_wearpart.jpg') }}" alt="">
+                    <img class="img-responsive" src="{{ asset('assets/img/hardox_500.jpg') }}" alt="">
+                    {{--<img class="img-responsive" src="{{ asset('assets/img/why1.jpg') }}" alt="">--}}
                 </div>
             </div>
             <!-- /About slider -->
