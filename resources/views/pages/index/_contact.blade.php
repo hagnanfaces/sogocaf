@@ -48,7 +48,6 @@
             <!-- contact form -->
             <div class="col-md-8 col-md-offset-2">
                 <form class="contact-form" method="POST" action="{{ route('contact.submit') }}">
-                    @csrf
                     <input type="text" required name="name" class="input"
                            placeholder="{{ trans('page.home.contact.contact-form.name') }}">
                     <input type="email" required name="email" class="input"
@@ -58,6 +57,7 @@
                     <textarea class="input" required name="message"
                               placeholder="{{ trans('page.home.contact.contact-form.msg') }}"></textarea>
                     <button type="submit" class="main-btn">{{ trans('page.home.contact.contact-form.send') }}</button>
+                    @csrf
                 </form>
             </div>
             <!-- /contact form -->

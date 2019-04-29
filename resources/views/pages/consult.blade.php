@@ -35,27 +35,30 @@
             <!-- consult form -->
             <div class="col-md-8 col-md-offset-2">
                 <form class="row" action="{{ route('contact.submit') }}" method="post">
-                    @csrf
                     <div class="form-group col-sm-12">
                         <input type="text" name="name" class="form-control"
                                placeholder="{{ trans('page.contact.form.name') }}">
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" name="email" class="form-control" placeholder="{{ trans('page.contact.form.email') }}">
+                        <input type="email" name="email" class="form-control"
+                               placeholder="{{ trans('page.contact.form.email') }}">
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="tel" name="phone" class="form-control" placeholder="{{ trans('page.contact.form.phone') }}">
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="text" name="subject" class="form-control"
+                        <input type="tel" name="phone" class="form-control"
                                placeholder="{{ trans('page.contact.form.phone') }}">
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea class="input form-control" name="message" placeholder="{{ trans('page.contact.form.msg') }}"></textarea>
+                        <input type="text" name="subject" class="form-control"
+                               placeholder="{{ trans('page.contact.form.subject') }}">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea class="input form-control" name="message"
+                                  placeholder="{{ trans('page.contact.form.msg') }}"></textarea>
                     </div>
                     <div class="btn-group col-sm-12 text-center">
                         <button class="center main-btn">{{ trans('page.contact.form.send') }}</button>
                     </div>
+                    @csrf
                 </form>
             </div>
             <!-- /consult form -->
