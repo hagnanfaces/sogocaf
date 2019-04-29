@@ -35,4 +35,5 @@ Route::prefix(\LaravelLocalization::setLocale())
         Route::name('category.show')->get('/category/{category}','CategoryController@show');
         Route::name('category.product')->get('/category/{category}/product/{product}','CategoryController@show');
         Route::name('contact')->get('/contact','ContactController@contact');
+        Route::name('contact.submit')->post('/contact', 'ContactController@submit');
     });

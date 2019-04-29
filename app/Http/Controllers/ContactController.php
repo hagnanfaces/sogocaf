@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
+use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -14,5 +17,20 @@ class ContactController extends Controller
     public function contact()
     {
         return view('pages.consult');
+    }
+
+    public function submit(Request $request)
+    {
+        $rule = [
+            'name' => ['required', 'string'],
+            'phone' => ['nullable'],
+            'email' => ['required', 'email'],
+            'subject' => ['required', 'string'],
+            'message' => ['required', 'string'],
+        ];
+        $validate = $this->validate($request, $rule);
+        Contact::query()->create($validate);
+        Mail::send(new ContactMail($validate), $validate);
+        return back()->with('success', trans('page.contact.alert.success'));
     }
 }

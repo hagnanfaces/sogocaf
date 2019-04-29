@@ -47,11 +47,16 @@
 
             <!-- contact form -->
             <div class="col-md-8 col-md-offset-2">
-                <form class="contact-form">
-                    <input type="text" name="nom" class="input" placeholder="{{ trans('page.home.contact.contact-form.name') }}">
-                    <input type="email" name="email" class="input" placeholder="{{ trans('page.home.contact.contact-form.email') }}">
-                    <input type="text" name="objet" class="input" placeholder="{{ trans('page.home.contact.contact-form.subject') }}">
-                    <textarea class="input" name="message" placeholder="{{ trans('page.home.contact.contact-form.msg') }}"></textarea>
+                <form class="contact-form" method="POST" action="{{ route('contact.submit') }}">
+                    @csrf
+                    <input type="text" required name="name" class="input"
+                           placeholder="{{ trans('page.home.contact.contact-form.name') }}">
+                    <input type="email" required name="email" class="input"
+                           placeholder="{{ trans('page.home.contact.contact-form.email') }}">
+                    <input type="text" required name="subject" class="input"
+                           placeholder="{{ trans('page.home.contact.contact-form.subject') }}">
+                    <textarea class="input" required name="message"
+                              placeholder="{{ trans('page.home.contact.contact-form.msg') }}"></textarea>
                     <button type="submit" class="main-btn">{{ trans('page.home.contact.contact-form.send') }}</button>
                 </form>
             </div>

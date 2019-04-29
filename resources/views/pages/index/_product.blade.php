@@ -23,8 +23,9 @@
                         <h3>{!! $product['description'] !!}</h3>
                         <div class="gallery work-link">
                             {{--<a href="{!! $product['href'] !!}#category-show"><i class="fa fa-external-link"></i></a>--}}
-                            <a class="lightbox" href="{!! $product['image'] !!}" title="{{ $product['name'] }}"><i
-                                        class="fa fa-search"></i></a>
+                            <a class="lightbox" href="{!! $product['image'] !!}" title="{{ $product['name'] }}">
+                                <i class="fa fa-search"></i>
+                            </a>
                         </div>
                         {{--<div class="gallery">--}}
                         {{--<a href="{!! $product['image'] !!}"></a>--}}
