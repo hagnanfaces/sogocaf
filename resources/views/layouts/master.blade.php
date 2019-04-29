@@ -158,7 +158,7 @@
 						<div class="col-sm-4">
 							<div class="contact">
 								<i class="fa fa-phone"></i>
-								<p class="text-uppercase text-gray">{{ trans('page.footer.contact.phone') }}</p>
+                                <h3 class="white-text text-uppercase text-gray">{{ trans('page.footer.contact.phone') }}</h3>
 								<p>(+226) 25 34 55 94</p>
 								<p>(+226) 25 41 64 62</p>
 								<p>(+226) 70 14 30 40</p>
@@ -170,8 +170,8 @@
 						<div class="col-sm-4">
 							<div class="contact">
 								<i class="fa fa-envelope"></i>
-								<p>{{ trans('page.footer.contact.email') }}</p>
-								<p>info@socoghaf.com</p>
+                                <h3 class="white-text">{{ trans('page.footer.contact.email') }}</h3>
+                                <p><a href="mailto:info@socoghaf.com">info@socoghaf.com</a></p>
 							</div>
 						</div>
 						<!-- /contact -->
@@ -180,7 +180,7 @@
 						<div class="col-sm-4">
 							<div class="contact">
 								<i class="fa fa-map-marker"></i>
-								<p>{{ trans('page.footer.contact.address') }}</p>
+                                <h3 class="white-text">{{ trans('page.footer.contact.address') }}</h3>
 								<p>Av. KADIOGO - Rue 8.31 - Quartier Gounghin - Secteur 06</p>
 							</div>
 						</div>
