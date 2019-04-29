@@ -1,5 +1,5 @@
 (function($) {
-	"use strict"
+	"use strict";
 
 	///////////////////////////
 	// Preloader
@@ -66,7 +66,36 @@
 	// magnificPopup
 	$('.work').magnificPopup({
 		delegate: '.lightbox',
-		type: 'image'
+		// gallery: {
+		// 	enabled: true, // set to true to enable gallery
+		//
+		// 	preload: [0,2], // read about this option in next Lazy-loading section
+		//
+		// 	navigateByImgClick: true,
+		//
+		// 	arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+		//
+		// 	// tPrev: 'Previous (Left arrow key)', // title for left button
+		// 	// tNext: 'Next (Right arrow key)', // title for right button
+		// 	tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
+		// },
+		type: 'image',
+		callbacks: {
+
+			buildControls: function () {
+				// re-appends controls inside the main container
+				this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+			}
+		}
+	});
+	$('.gallery').each(function () { // the containers for all your galleries
+		$(this).magnificPopup({
+			delegate: 'a', // the selector for gallery item
+			type: 'image',
+			gallery: {
+				enabled: true
+			}
+		});
 	});
 
 	///////////////////////////

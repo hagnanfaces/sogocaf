@@ -55,6 +55,7 @@ return [
                     'name' => "Tôles noires",
                     'description' => "6/10 à 50 mm en toute dimension",
                     'image' => asset('assets/img/tole_noire.jpg'),
+                    'slides' => [],
                     'href' => route('category.show', 'tole-noires'),
                     'slug' => 'tole-noires',
                 ],
