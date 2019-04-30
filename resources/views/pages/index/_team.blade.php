@@ -17,7 +17,7 @@
             <div class="col-sm-4">
                 <div class="team">
                     <div class="team-img">
-                        <img class="img-responsive" src="{{ asset('assets/img/team2.jpg') }}" alt="">
+                        <img class="img-responsive" src="{{ asset('assets/img/dg.jpg') }}" alt="">
                         <div class="overlay">
                             <div class="team-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -27,8 +27,8 @@
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Employé</h3>
-                        <span>Poste</span>
+                        <h3>Mr Charles GHOUSSOUB</h3>
+                        <span>Directeur Général</span>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
             <div class="col-sm-4">
                 <div class="team">
                     <div class="team-img">
-                        <img class="img-responsive" src="{{ asset('assets/img/team2.jpg') }}" alt="">
+                        <img class="img-responsive" src="{{ asset('assets/img/team5.jpg') }}" alt="">
                         <div class="overlay">
                             <div class="team-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -48,8 +48,8 @@
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Employé</h3>
-                        <span>Poste</span>
+                        <h3>STAFF</h3>
+                        <span>Administration</span>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
             <div class="col-sm-4">
                 <div class="team">
                     <div class="team-img">
-                        <img class="img-responsive" src="{{ asset('assets/img/team2.jpg') }}" alt="">
+                        <img class="img-responsive" src="{{ asset('assets/img/team4.jpg') }}" alt="">
                         <div class="overlay">
                             <div class="team-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -69,8 +69,8 @@
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Employé</h3>
-                        <span>Poste</span>
+                        <h3>STAFF</h3>
+                        <span>Usine</span>
                     </div>
                 </div>
             </div>
