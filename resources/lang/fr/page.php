@@ -178,7 +178,23 @@ return [
         ],
         'personal' => [
             'title' => 'Personnels',
-            'items' => [],
+            'items' => [
+				[
+					'avatar' => asset('assets/img/dg.jpg'),
+					'name' => 'Mr Charbel GHOUSSOUB',
+					'post' => 'Directeur Général',
+				],
+				[
+					'avatar' => asset('assets/img/team5.jpg'),
+					'name' => 'STAFF',
+					'post' => 'Administration',
+				],
+				[
+					'avatar' => asset('assets/img/team4.jpg'),
+					'name' => 'STAFF',
+					'post' => 'Usine',
+				],
+			],
         ],
         'contact' => [
             'title' => 'Contactez nous',
@@ -201,6 +217,9 @@ return [
             'msg' => 'Message',
             'send' => 'Soumettre',
         ],
+		'alert' => [
+			'success' => 'Votres devis a été envoyer'
+		],
     ],
     'product' => [],
 ];

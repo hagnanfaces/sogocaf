@@ -8,5 +8,8 @@ Vous avez reçu une message de : {{ $data['name'] }}
     Email: {{ $data['email'] }}
 </p>
 <p>
+    Phone: {{ $data['phone'] }}
+</p>
+<p>
     Message: {{ $data['message'] }}
 </p>

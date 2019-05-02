@@ -172,7 +172,23 @@ return [
         ],
         'personal' => [
             'title' => 'Team',
-            'items' => [],
+            'items' => [
+				[
+					'avatar' => asset('assets/img/dg.jpg'),
+					'name' => 'M. Charbel GHOUSSOUB',
+					'post' => 'CEO',
+				],
+				[
+					'avatar' => asset('assets/img/team5.jpg'),
+					'name' => 'STAFF',
+					'post' => 'Administration',
+				],
+				[
+					'avatar' => asset('assets/img/team4.jpg'),
+					'name' => 'STAFF',
+					'post' => 'Factory',
+				],
+			],
         ],
         'contact' => [
             'title' => 'Contact us',
@@ -195,6 +211,9 @@ return [
             'msg' => 'Message',
             'send' => 'Send',
         ],
+		'alert' => [
+			'success' => 'you submition is pass'
+		],
     ],
     'product' => [],
 ];
