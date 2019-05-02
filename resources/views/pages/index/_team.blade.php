@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Mr Charlbel GHOUSSOUB</h3>
+                        <h3>Mr Charbel GHOUSSOUB</h3>
                         <span>Directeur Général</span>
                     </div>
                 </div>
