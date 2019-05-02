@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Accueil
+    {{ trans('page.home.title') }}
 @endsection
 
 {{--  @section('bgi')

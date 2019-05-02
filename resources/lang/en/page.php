@@ -29,6 +29,7 @@ return [
         'copyright' => "<p>Copyright © 2019. All rights reserved. Realized by <a href=\"#\" target=\"_blank\">RDASERVICE</a></p>"
     ],
     'home' => [
+		'title' => 'Home',
         'about' => [
             'title' => 'ABOUT',
             'origin' => [

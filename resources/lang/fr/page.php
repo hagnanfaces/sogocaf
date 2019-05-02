@@ -29,6 +29,7 @@ return [
         'copyright' => "<p>Copyright © 2019. Tout droit réservé. Réalisé par <a href=\"#\" target=\"_blank\">RDASERVICE</a></p>"
     ],
     'home' => [
+		'title' => 'Accueil',
         'about' => [
             'title' => 'A PROPOS',
             'origin' => [
@@ -109,7 +110,7 @@ return [
                     'slug' => 'tubes',
                 ],
                 [
-                    'name' => "Tubes carrées",
+                    'name' => "Tubes carrés",
                     'description' => "en toute dimension",
                     'image' => asset('assets/img/tubes_carre.jpg'),
                     'href' => route('category.show', 'tubes'),

@@ -9,7 +9,7 @@
 
             <!-- Section header -->
             <div class="section-header text-center">
-                <h2 class="title">{{ trans('page.home.personal.title) }}</h2>
+                <h2 class="title">{{ trans('page.home.personal.title') }}</h2>
             </div>
             <!-- /Section header -->
 			
