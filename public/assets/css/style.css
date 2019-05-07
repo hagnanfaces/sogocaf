@@ -474,6 +474,16 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         color: #FFF;
         opacity: 1;
     }
+    .devis a:hover, .devis a:focus {
+        background-color: #ffb221;
+        /* color: #FFF;
+        opacity: 1; */
+    }
+    .lang a:hover, .lang a:focus {
+        background-color: #ffb221;
+        /* color: #FFF;
+        opacity: 1; */
+    }
     .has-dropdown>a:after {
         content: "\f054";
         font-family: 'FontAwesome';

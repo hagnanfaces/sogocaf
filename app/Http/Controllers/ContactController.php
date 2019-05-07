@@ -31,7 +31,7 @@ class ContactController extends Controller
         ];
         $validate = $this->validate($request, $rule); */
         Contact::query()->create($validate);
-        Mail::send(new ContactMail($validate), $validate);
+        dd(Mail::send(new ContactMail($validate), $validate));
         return back()->with('success', trans('page.contact.alert.success'));
     }
 }
