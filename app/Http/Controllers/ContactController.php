@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContactRequest;
 use App\Mail\ContactMail;
 use App\Models\Contact;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
@@ -30,8 +29,11 @@ class ContactController extends Controller
             'message' => ['required', 'string'],
         ];
         $validate = $this->validate($request, $rule); */
+//        Contact::query()->create($validate);
+        $validate = $request->all();
         Contact::query()->create($validate);
-        dd(Mail::send(new ContactMail($validate), $validate));
+//        dd(Mail::send(new ContactMail($validate), $validate));
+        Mail::send(new ContactMail($validate), $validate);
         return back()->with('success', trans('page.contact.alert.success'));
     }
 }

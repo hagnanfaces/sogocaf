@@ -34,16 +34,16 @@ return [
             'title' => 'ABOUT',
             'origin' => [
                 'title' => 'ORIGIN',
-                'content' => "<strong>SOCOGHAF</strong> is a company specializing in the distribution of ferrous and non-ferrous Steel, founded in 1989 in <strong>Bobo-Dioulasso</strong> in <strong>BURKINA-FASO</strong>.
+                'content' => "<strong>SOCOGHAF</strong> is a company specializing in the distribution of ferrous and non-ferrous steel, founded in 1989 in <strong>Bobo-Dioulasso</strong> in <strong>BURKINA-FASO</strong>.
                         It continues to grow and its notoriety is no longer in doubt in the field of building materials.",
             ],
             'parc' => [
                 'title' => "STEEL PARK",
-                'content' => "Our steel park meets all the needs for the professionals of the industry of the mines, the buildings and the private individuals, having a unit of transformation of plate vat.",
+                'content' => "Our steel fleet meets all the needs of professionals in the mining, building and private sector. We are a representation of the brand name <b style = 'color: #a50a2e;'> HARDOX® </b> wear plate.. There is also a tray sheet processing unit.",
             ],
             'label' => [
                 'title' => "LABELS",
-                'content' => "<b>SOCOGHAF</b> draws on its 30-year experience to advise and guide its professional and private clients. It is also a boilermaking workshop at the forefront of tech, label, <b>HARDOX WEAR PART</b>.",
+                'content' => "<b>SOCOGHAF</b> draws on its 30 years of experience to advise and guide its professional and private clients. It is also a state-of-the-art boilermaking workshop, labeled <b style='color: #a50a2e;'>HARDOX® WEARPARTS</b>.",
             ],
         ],
         'product' => [
@@ -65,14 +65,14 @@ return [
                 ],
                 [
                     'name' => "Hardox brand wear plates",
-                    'description' => "4-50mm in any size",
+                    'description' => "4 to 50mm in any size",
                     'image' => asset('assets/img/tole_hardox2.jpg'),
                     'href' => route('category.show', 'tole-hardox'),
                     'slug' => 'tole-hardox',
                 ],
                 [
                     'name' => "Tray plates",
-                    'description' => "aluzinc, galva, aluminum, prelace of 35-70 / 100",
+                    'description' => "aluzinc, galva, aluminum, prepainted of 35 to 70/100",
                     'image' => asset('assets/img/tole_bac1.jpg'),
                     'href' => route('category.show', 'tole-bac'),
                     'slug' => 'tole-bac',
@@ -86,7 +86,7 @@ return [
                 ],
                 [
                     'name' => "Flat iron",
-                    'description' => "20-100 mm",
+                    'description' => "20 to 100 mm",
                     'image' => asset('assets/img/fer_plat1.jpg'),
                     'href' => route('category.show', 'fer-plat'),
                     'slug' => 'fer-plat',
@@ -99,27 +99,6 @@ return [
                     'slug' => 'tubes',
                 ],
                 [
-                    'name' => "Round tubes",
-                    'description' => "in any dimension",
-                    'image' => asset('assets/img/tube_rond1.jpg'),
-                    'href' => route('category.show', 'tubes'),
-                    'slug' => 'tubes',
-                ],
-                [
-                    'name' => "Square tubes",
-                    'description' => "in any dimension",
-                    'image' => asset('assets/img/tubes_carre.jpg'),
-                    'href' => route('category.show', 'tubes'),
-                    'slug' => 'tubes',
-                ],
-                [
-                    'name' => "Rectangular tubes",
-                    'description' => "in any dimension",
-                    'image' => asset('assets/img/tubes_carre_rectangle.jpg'),
-                    'href' => route('category.show', 'tubes'),
-                    'slug' => 'tubes',
-                ],
-                [
                     'name' => "Duckboard",
                     'description' => "",
                     'image' => asset('assets/img/caillebotis1.jpg'),
@@ -128,7 +107,7 @@ return [
                 ],
                 [
                     'name' => "Concrete iron",
-                    'description' => "diameter of 6-32 mm in FEe 500 or 400",
+                    'description' => "diameter of 6 to 32 mm in FEe 500 or 400",
                     'image' => asset('assets/img/fer-a-beton2.jpg'),
                     'href' => route('category.show', 'fer-a-betons'),
                     'slug' => 'fer-a-betons',
@@ -139,6 +118,13 @@ return [
                     'image' => asset('assets/img/tube_galva2.jpg'),
                     'href' => route('category.show', 'tubes-galva'),
                     'slug' => 'tubes-galva',
+                ],
+                [
+                    'name' => "Full iron",
+                    'description' => "round, square, rectangle in any dimension",
+                    'image' => asset('assets/img/fer_plat1.jpg'),
+                    'href' => route('category.show', 'fer-plein'),
+                    'slug' => 'fer-plein',
                 ],
             ]
         ],
@@ -155,19 +141,23 @@ return [
                 ],
                 [
                     'title' => "ROLLING",
-                    'description' => "",
+                    'description' => "Roller from 1 to 3 m",
                 ],
                 [
                     'title' => "PLASMA CUP",
-                    'description' => "Oxy, plasma cuts of 0-20 mm, 20-40mm and more than 40 mm",
+                    'description' => "Oxy cuts, plasma cuts from 0 to 20 mm, from 20 to 40 mm and over 40 mm",
+                ],
+                [
+                    'title' => "DRILLING",
+                    'description' => "drilling and milling cnc <500 Hb,> 500 Hb",
                 ],
             ]
         ],
         'feature' => [
             'title' => 'Why choose us',
-            'description' => "<b>SOCGHAF</b> draws on its 30-year experience to advise and guide its professional and private clients. It is also a boilermaking workshop at the forefront of tech, label, <b>HARDOX WEAR PART</b>.",
+            'description' => "<b>SOCOGHAF</b> draws on its 30 years of experience to advise and guide its professional and private clients. It is also a state-of-the-art boilermaking workshop, labeled <b style='color: #a50a2e;'>HARDOX® WEARPARTS</b>.",
             'features' => [
-                ["<b>Labeliser HARDOX WEART PLATES.</b>"],
+                ["<b> Wear Sheet Representative <span style = 'color: #a50a2e' class = 'text-capitalize'> HARDOX® WEAR PLATE </span> </b>."],
                 ["<b>Sheet metal transformation.</b>"],
             ],
         ],
@@ -176,7 +166,7 @@ return [
             'items' => [
 				[
 					'avatar' => asset('assets/img/dg.jpg'),
-					'name' => 'M. Charbel GHOUSSOUB',
+                    'name' => 'Charbel GHOUSSOUB',
 					'post' => 'CEO',
 				],
 				[

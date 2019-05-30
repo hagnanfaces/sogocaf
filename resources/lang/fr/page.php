@@ -34,19 +34,20 @@ return [
             'title' => 'A PROPOS',
             'origin' => [
                 'title' => 'ORIGINE',
-                'content' => "<strong>SOCOGHAF</strong> est une entreprise spécialisée dans la distribution de l'acier ferreux et non ferreux,
-                        fondée depuis 1989 à <strong>BOBO-DIOULASSO</strong> au <strong>BURKINA-FASO</strong>.
+                'content' => "<strong>SOCOGHAF</strong> est une entreprise spécialisée dans la distribution d'acier ferreux et non ferreux,
+                        fondée en 1989 à <strong>BOBO-DIOULASSO</strong> au <strong>BURKINA-FASO</strong>.
                         Elle ne cesse de s'accroitre et sa notorieté ne fait plus aucun doute dans le domaine des matériaux de construction.",
             ],
             'parc' => [
                 'title' => "PARC D'ACIER",
-                'content' => "Notre parc d'acier repond a tous les besoins pour les professionels de l'industrie des mines, 
-                        du batiments et des particuliers, disposant d'une unitée de transformation de tôle bac.",
+                'content' => "Notre parc d'acier repond a tous les besoins pour les professionels de l'industrie des mines, du batiments et des particuliers. 
+                Nous sommes une représentation de la tôle d'usure de marque <b style='color: #a50a2e'>HARDOX®</b>. 
+                On dispose également d'une unité de transformation de tôle bac.",
             ],
             'label' => [
                 'title' => "LABELS",
                 'content' => "<b>Socgohaf</b> s'appuie sur son expérience de 30 ans, pour conseiller et orienter ses clients professionnels et particuliers.
-                        C'est en outre un atelier de chaudronnerie à la pointe de la tech, labeliser, <b>HARDOX WEAR PART</b>.",
+                        C'est en outre un atelier de chaudronnerie à la pointe de la techologie, labelisé, <b style='color: #a50a2e'>HARDOX® WEARPARTS</b>.",
             ],
         ],
         'product' => [
@@ -62,21 +63,21 @@ return [
                 ],
                 [
                     'name' => "Tôles inox",
-                    'description' => "7/10 au 10mm en 304L ou 316L",
+                    'description' => "7/10 à 10mm en 304L ou 316L",
                     'image' => asset('assets/img/tole_inox4.jpg'),
                     'href' => route('category.show', 'tole-inox'),
                     'slug' => 'tole-inox',
                 ],
                 [
                     'name' => "Tôles d'usure marque hardox",
-                    'description' => "4-50mm en toute dimension",
+                    'description' => "4 à 50mm en toute dimension",
                     'image' => asset('assets/img/tole_hardox2.jpg'),
                     'href' => route('category.show', 'tole-hardox'),
                     'slug' => 'tole-hardox',
                 ],
                 [
                     'name' => "Tôles bac",
-                    'description' => "aluzinc, galva, aluminium, prelace du 35-70/100",
+                    'description' => "aluzinc, galva, aluminium, prélaquée du 35 à 70/100",
                     'image' => asset('assets/img/tole_bac1.jpg'),
                     'href' => route('category.show', 'tole-bac'),
                     'slug' => 'tole-bac',
@@ -90,7 +91,7 @@ return [
                 ],
                 [
                     'name' => "Fer Plat",
-                    'description' => "20-100 mm",
+                    'description' => "20 à 100 mm",
                     'image' => asset('assets/img/fer_plat1.jpg'),
                     'href' => route('category.show', 'fer-plat'),
                     'slug' => 'fer-plat',
@@ -103,27 +104,6 @@ return [
                     'slug' => 'tubes',
                 ],
                 [
-                    'name' => "Tubes ronds",
-                    'description' => "en toute dimension",
-                    'image' => asset('assets/img/tube_rond1.jpg'),
-                    'href' => route('category.show', 'tubes'),
-                    'slug' => 'tubes',
-                ],
-                [
-                    'name' => "Tubes carrés",
-                    'description' => "en toute dimension",
-                    'image' => asset('assets/img/tubes_carre.jpg'),
-                    'href' => route('category.show', 'tubes'),
-                    'slug' => 'tubes',
-                ],
-                [
-                    'name' => "Tubes rectangles",
-                    'description' => "en toute dimension",
-                    'image' => asset('assets/img/tubes_carre_rectangle.jpg'),
-                    'href' => route('category.show', 'tubes'),
-                    'slug' => 'tubes',
-                ],
-                [
                     'name' => "Caillebotis",
                     'description' => "Caillebotis",
                     'image' => asset('assets/img/caillebotis1.jpg'),
@@ -132,17 +112,24 @@ return [
                 ],
                 [
                     'name' => "Fer à bétons",
-                    'description' => "diamètre 6-32 mm en FEe 500 ou 400",
+                    'description' => "diamètre 6 à 32 mm en FEe 500 ou 400",
                     'image' => asset('assets/img/fer-a-beton2.jpg'),
                     'href' => route('category.show', 'fer-a-betons'),
                     'slug' => 'fer-a-betons',
                 ],
                 [
                     'name' => "Tubes Galva",
-                    'description' => "20/27 au 102/114 de diamètre",
+                    'description' => "20/27 à 102/114 de diamètre",
                     'image' => asset('assets/img/tube_galva2.jpg'),
                     'href' => route('category.show', 'tubes-galva'),
                     'slug' => 'tubes-galva',
+                ],
+                [
+                    'name' => "Fer plein",
+                    'description' => "rond, carré, rectangle en toute dimension",
+                    'image' => asset('assets/img/fer_plat1.jpg'),
+                    'href' => route('category.show', 'fer-plein'),
+                    'slug' => 'fer-plein',
                 ],
             ]
         ],
@@ -150,29 +137,33 @@ return [
             'title' => 'SERVICES',
             'services' => [
                 [
-                    'title' => "HARDOX WEAR PART",
+                    'title' => "HARDOX WEARPARTS",
                     'description' => "Atelier de chaudronnerie",
                 ],
                 [
                     'title' => "PLIAGE",
-                    'description' => "Presse plieuse 1-3 m, Presse plieuse 3-9 m, Presse plieuse 9-12 m",
+                    'description' => "Presse plieuse 1 à 3 m, Presse plieuse 3 à 9 m, Presse plieuse 9 à 12 m",
                 ],
                 [
                     'title' => "ROULAGE",
-                    'description' => "",
+                    'description' => "Rouleuse de 1 à 3 m",
                 ],
                 [
                     'title' => "COUPE PLASMA",
-                    'description' => "Oxy, des coupes plasma de 0-20 mm , de 20-40mm  et plus de 40 mm",
+                    'description' => "Coupes Oxy, coupes plasma de 0 à 20 mm , de 20 à 40mm  et plus de 40 mm",
+                ],
+                [
+                    'title' => "perçage",
+                    'description' => "forage et fraisage cnc < 500 Hb, > 500 Hb",
                 ],
             ]
         ],
         'feature' => [
             'title' => 'Pourquoi nous Choisir',
-            'description' => "<b>Socgohaf</b> s'appuie sur son expérience de 30ans, pour conseiller et orienter ses clients professionnels et particuliers.
-                    C'est en outre un atelier de chaudronnerie à la pointe de la tech, labeliser, <b>HARDOX WEAR PART</b>.",
+            'description' => "<b>Socgohaf</b> s'appuie sur son expérience de 30 ans, pour conseiller et orienter ses clients professionnels et particuliers.
+                        C'est en outre un atelier de chaudronnerie à la pointe de la techologie, labelisé, <b style='color: #a50a2e'>HARDOX® WEARPARTS</b>.",
             'features' => [
-                ["<b>Labelliser HARDOX WEART PLATES</b>."],
+                ["<b>Représentant de la tôle d'usure <span style='color: #a50a2e' class='text-capitalize'>HARDOX® WEAR PLATE</span></b>."],
                 ["<b>Transformation de tôle bac</b>."]
 //                ["<b>Construction d'un département HARDOX</b>."]
             ],
@@ -182,7 +173,7 @@ return [
             'items' => [
 				[
 					'avatar' => asset('assets/img/dg.jpg'),
-					'name' => 'Mr Charbel GHOUSSOUB',
+                    'name' => 'Charbel GHOUSSOUB',
 					'post' => 'Directeur Général',
 				],
 				[

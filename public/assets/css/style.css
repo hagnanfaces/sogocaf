@@ -50,7 +50,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
-    color: #868F9B;
+    /*color: #868F9B;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -191,7 +191,8 @@ ul, ol {
   	display:block;
   	height:4px;
   	width:40px;
-  	background-color: #ffb221;
+    /*background-color: #ffb221;*/
+    background-color: #777;
     margin-top: 20px;
 }
 
@@ -652,12 +653,13 @@ header {
 
 .about:after {
     content: "";
-    background-color: #1C1D21;
+    /*background-color: #1C1D21;*/
+    background-color: #777;
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
-    width: 0%;
+    width: 0;
     z-index: -1;
     -webkit-transition: 0.2s width;
     transition: 0.2s width;
@@ -814,7 +816,8 @@ header {
 
 .service:after {
     content: "";
-    background-color: #1C1D21;
+    /*background-color: #1C1D21;*/
+    background-color: #777;
     position: absolute;
     left: 0;
     top: 0;
@@ -890,7 +893,8 @@ header {
 
 .pricing::after {
     content: "";
-    background-color: #1C1D21;
+    /*background-color: #1C1D21;*/
+    background-color: #777;
     position: absolute;
     left: 0;
     right: 0;
@@ -1018,7 +1022,8 @@ header {
 
 .team::after {
     content: "";
-    background-color: #1C1D21;
+    /*background-color: #1C1D21;*/
+    background-color: #777;
     position: absolute;
     left: 0;
     right: 0;
@@ -1462,6 +1467,7 @@ header {
 
 #footer {
     position: relative;
+    color: gray;
 }
 
 .footer-logo {
