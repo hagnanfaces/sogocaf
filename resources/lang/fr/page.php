@@ -41,7 +41,7 @@ return [
             'parc' => [
                 'title' => "PARC D'ACIER",
                 'content' => "Notre parc d'acier repond a tous les besoins pour les professionels de l'industrie des mines, du batiments et des particuliers. 
-                Nous sommes une représentation de la tôle d'usure de marque <b style='color: #a50a2e'>HARDOX®</b>. 
+                Nous représentation la tôle d'usure de marque <b style='color: #a50a2e'>HARDOX®</b>. 
                 On dispose également d'une unité de transformation de tôle bac.",
             ],
             'label' => [
@@ -161,7 +161,7 @@ return [
         'feature' => [
             'title' => 'Pourquoi nous Choisir',
             'description' => "<b>Socgohaf</b> s'appuie sur son expérience de 30 ans, pour conseiller et orienter ses clients professionnels et particuliers.
-                        C'est en outre un atelier de chaudronnerie à la pointe de la techologie, labelisé, <b style='color: #a50a2e'>HARDOX® WEARPARTS</b>.",
+                        C'est en outre un atelier de chaudronnerie à la pointe de la technologie, labelisé, <b style='color: #a50a2e'>HARDOX® WEARPARTS</b>.",
             'features' => [
                 ["<b>Représentant de la tôle d'usure <span style='color: #a50a2e' class='text-capitalize'>HARDOX® WEAR PLATE</span></b>."],
                 ["<b>Transformation de tôle bac</b>."]
