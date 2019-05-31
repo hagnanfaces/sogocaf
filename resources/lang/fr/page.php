@@ -41,7 +41,7 @@ return [
             'parc' => [
                 'title' => "PARC D'ACIER",
                 'content' => "Notre parc d'acier repond a tous les besoins pour les professionels de l'industrie des mines, du batiments et des particuliers. 
-                Nous représentation la tôle d'usure de marque <b style='color: #a50a2e'>HARDOX®</b>. 
+                Nous représentons la tôle d'usure de marque <b style='color: #a50a2e'>HARDOX®</b>. 
                 On dispose également d'une unité de transformation de tôle bac.",
             ],
             'label' => [
