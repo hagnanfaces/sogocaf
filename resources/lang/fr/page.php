@@ -146,7 +146,7 @@ return [
                 ],
                 [
                     'title' => "ROULAGE",
-                    'description' => "Rouleuse de 1 à 3 m",
+                    'description' => "Rouleuse de 1 à 3 m de diamètre",
                 ],
                 [
                     'title' => "COUPE PLASMA",
