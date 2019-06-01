@@ -46,7 +46,7 @@ return [
             ],
             'label' => [
                 'title' => "LABELS",
-                'content' => "<b>Socgohaf</b> s'appuie sur son expérience de 30 ans, pour conseiller et orienter ses clients professionnels et particuliers.
+                'content' => "<b>SOCOGHAF</b> s'appuie sur son expérience de 30 ans, pour conseiller et orienter ses clients professionnels et particuliers.
                         C'est en outre un atelier de chaudronnerie à la pointe de la techologie, labelisé, <b style='color: #a50a2e'>HARDOX® WEARPARTS</b>.",
             ],
         ],
@@ -160,7 +160,7 @@ return [
         ],
         'feature' => [
             'title' => 'Pourquoi nous Choisir',
-            'description' => "<b>Socgohaf</b> s'appuie sur son expérience de 30 ans, pour conseiller et orienter ses clients professionnels et particuliers.
+            'description' => "<b>SOCOGHAF</b> s'appuie sur son expérience de 30 ans, pour conseiller et orienter ses clients professionnels et particuliers.
                         C'est en outre un atelier de chaudronnerie à la pointe de la technologie, labelisé, <b style='color: #a50a2e'>HARDOX® WEARPARTS</b>.",
             'features' => [
                 ["<b>Représentant de la tôle d'usure <span style='color: #a50a2e' class='text-capitalize'>HARDOX® WEAR PLATE</span></b>."],

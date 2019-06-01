@@ -39,7 +39,7 @@ return [
             ],
             'parc' => [
                 'title' => "STEEL PARK",
-                'content' => "Our steel fleet meets all the needs of professionals in the mining, building and private sector. We are a representation of the brand name <b style = 'color: #a50a2e;'> HARDOX® </b> wear plate.. There is also a tray sheet processing unit.",
+                'content' => "Our steel fleet meets all the needs of professionals in the mining, building and private sector. We represent the <b style = 'color: #a50a2e;'> HARDOX® </b> wear plate. There is also a tray sheet processing unit.",
             ],
             'label' => [
                 'title' => "LABELS",
