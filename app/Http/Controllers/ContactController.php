@@ -32,7 +32,7 @@ class ContactController extends Controller
 //        Contact::query()->create($validate);
         $validate = $request->all();
         Contact::query()->create($validate);
-//        dd(Mail::send(new ContactMail($validate), $validate));
+        dd(Mail::send(new ContactMail($validate), $validate));
         Mail::send(new ContactMail($validate), $validate);
         return back()->with('success', trans('page.contact.alert.success'));
     }

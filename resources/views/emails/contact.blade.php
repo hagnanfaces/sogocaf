@@ -7,9 +7,11 @@ Vous avez reçu une message de : {{ $data['name'] }}
 <p>
     Email: {{ $data['email'] }}
 </p>
-<p>
-    Phone: {{ $data['phone'] }}
-</p>
+@isset($data['phone'])
+    <p>
+        Phone: {{ $data['phone'] }}
+    </p>
+@endisset
 <p>
     Message: {{ $data['message'] }}
 </p>
