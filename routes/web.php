@@ -13,7 +13,7 @@
 
 //Route::redirect('/','/fr');
 
-Route::prefix(\LaravelLocalization::setLocale())
+Route::prefix(LaravelLocalization::setLocale())
     ->middleware([
         'localeSessionRedirect',
         'localizationRedirect',
@@ -37,3 +37,19 @@ Route::prefix(\LaravelLocalization::setLocale())
         Route::name('contact')->get('/contact','ContactController@contact');
         Route::name('contact.submit')->post('/contact', 'ContactController@submit');
     });
+
+Route::get('product', function () {
+    foreach (trans('page.home.product.products') as $product) {
+        if (isset($product['slides'])) {
+            foreach ($product['slides'] as $k => $slide) {
+                echo $slide;
+                echo '<br>';
+                echo $product['name'];
+                echo '<br>';
+                echo $product['description'];
+                echo '<br>';
+            }
+        }
+//        dd($product);
+    }
+});

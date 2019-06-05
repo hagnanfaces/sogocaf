@@ -1770,3 +1770,7 @@ header {
             transform:scale(0);
   }
 }
+
+.p-1 {
+    padding: .25rem !important;
+}

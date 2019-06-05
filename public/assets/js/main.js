@@ -122,6 +122,25 @@
 		animateOut: 'fadeOut'
 	});
 
+    $('.product').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 15,
+        nav: false,
+        // navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+        dots: true,
+        autoplay: true,
+        animateOut: 'fadeOut',
+        // responsive:{
+        //     0: {
+        //         items:1
+        //     },
+        //     992:{
+        //         items:2
+        //     }
+        // }
+    });
+
 	$('#testimonial-slider').owlCarousel({
 		loop:true,
 		margin:15,
